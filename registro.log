@@ -1,0 +1,539 @@
+kittens service: 2021/05/08 19:49:47 [::1]:61347 DELETE /kittens/delete/all 200 OK   3.5374
+kittens service: 2021/05/08 19:49:47 [::1]:61348 GET /kittens/list 404 Not Found   3.3772193548387097
+kittens service: 2021/05/08 19:49:47 [::1]:61349 GET /kittens/delete/all 405 Method Not Allowed   3.1593342351716966
+kittens service: 2021/05/08 19:49:47 [::1]:61350 POST /kittens/list 405 Method Not Allowed   2.955506219999329
+kittens service: 2021/05/08 19:49:47 [::1]:61351 POST /kittens/insert 400 Bad Request   2.7648283993542115
+kittens service: 2021/05/08 19:49:47 [::1]:61352 POST /kittens/insert 400 Bad Request   2.586452373589424
+kittens service: 2021/05/08 19:49:47 [::1]:61353 POST /kittens/insert 400 Bad Request {"nae": "Felix", "weight": 12.3}  2.4291135107772033
+kittens service: 2021/05/08 19:49:47 [::1]:61354 POST /kittens/insert 400 Bad Request {"Id": 3, "name": "Felix", "weight": 12.3}  2.2723965100819004
+kittens service: 2021/05/08 19:49:47 [::1]:61355 POST /kittens/insert 200 OK {"name": "Felix", "weight": 12.3} {"id":1}
+ 2.2389064126572613
+kittens service: 2021/05/08 19:49:47 [::1]:61356 POST /kittens/insert 200 OK {"name": "Garfield", "weight": 15.0} {"id":2}
+ 2.1959382570019543
+kittens service: 2021/05/08 19:49:47 [::1]:61357 GET /kittens/insert 405 Method Not Allowed {"name": "Fat Freddys Cat", "weight": 20.0}  2.0542648210663446
+kittens service: 2021/05/08 19:49:47 [::1]:61358 POST /kittens/insert 200 OK {"name": "Fat Freddys Cat", "weight": 20.0} {"id":3}
+ 2.0291574132556125
+kittens service: 2021/05/08 19:49:47 [::1]:61359 GET /kittens/list 200 OK  [{"id":1,"name":"Felix","weight":12.3},{"id":2,"name":"Garfield","weight":15},{"id":3,"name":"Fat Freddys Cat","weight":20}]
+ 1.9733472575617024
+kittens service: 2021/05/08 19:49:47 [::1]:61360 GET /kittens/search/name 400 Bad Request   1.846034531267399
+kittens service: 2021/05/08 19:49:47 [::1]:61361 GET /kittens/search/name 400 Bad Request   1.7269355292501476
+kittens service: 2021/05/08 19:49:47 [::1]:61362 GET /kittens/search/name 400 Bad Request {"nme":"Garfield"}  1.6155203338146542
+kittens service: 2021/05/08 19:49:47 [::1]:61363 GET /kittens/search/name 404 Not Found {"name":"Guarimba"}  1.5483770864717732
+kittens service: 2021/05/08 19:49:47 [::1]:61364 GET /kittens/search/name 200 OK {"name":"Garfield"} [{"id":2,"name":"Garfield","weight":15}]
+ 1.5260043712155298
+kittens service: 2021/05/08 19:49:47 [::1]:61365 GET /kittens/search/id 400 Bad Request   1.4318621537177536
+kittens service: 2021/05/08 19:49:47 [::1]:61366 GET /kittens/search/id 400 Bad Request   1.339483950252092
+kittens service: 2021/05/08 19:49:47 [::1]:61367 GET /kittens/search/name 400 Bad Request {"d": 1}  1.2542527276551831
+kittens service: 2021/05/08 19:49:47 [::1]:61368 GET /kittens/search/id 404 Not Found {"id": 20}  1.210881583935494
+kittens service: 2021/05/08 19:49:47 [::1]:61369 GET /kittens/search/id 200 OK {"id": 2} {"id":2,"name":"Garfield","weight":15}
+ 1.2464376107783655
+kittens service: 2021/05/08 19:49:47 [::1]:61370 DELETE /kittens/delete/name 400 Bad Request   1.166022281050729
+kittens service: 2021/05/08 19:49:47 [::1]:61371 DELETE /kittens/delete/name 400 Bad Request   1.0907950371119726
+kittens service: 2021/05/08 19:49:47 [::1]:61372 DELETE /kittens/delete/name 400 Bad Request {"nme":"Garfield"}  1.0204211637499097
+kittens service: 2021/05/08 19:49:47 [::1]:61373 DELETE /kittens/delete/name 404 Not Found {"name":"Guarimba"}  0.9934004435079801
+kittens service: 2021/05/08 19:49:47 [::1]:61374 DELETE /kittens/delete/name 200 OK {"name":"Garfield"}  1.0909294471526265
+kittens service: 2021/05/08 19:49:47 [::1]:61375 GET /kittens/search/name 404 Not Found {"name":"Garfield"}  1.0898178699169732
+kittens service: 2021/05/08 19:49:47 [::1]:61376 GET /kittens/search/id 404 Not Found {"id": 2}  1.0565522008900716
+kittens service: 2021/05/08 19:49:47 [::1]:61377 DELETE /kittens/delete/id 400 Bad Request   0.9883875427681316
+kittens service: 2021/05/08 19:49:47 [::1]:61378 DELETE /kittens/delete/id 400 Bad Request   0.9246206045250264
+kittens service: 2021/05/08 19:49:47 [::1]:61379 DELETE /kittens/delete/id 400 Bad Request {"d": 1}  0.8713741139105087
+kittens service: 2021/05/08 19:49:47 [::1]:61380 DELETE /kittens/delete/id 404 Not Found {"id": 20}  0.9178854614001534
+kittens service: 2021/05/08 19:49:47 [::1]:61381 DELETE /kittens/delete/id 200 OK {"id": 1}  1.0179831735678855
+kittens service: 2021/05/08 19:49:47 [::1]:61382 GET /kittens/search/name 404 Not Found {"name":"Felix"}  0.9849132914022155
+kittens service: 2021/05/08 19:49:47 [::1]:61383 GET /kittens/search/id 404 Not Found {"id": 1}  0.9590543693762661
+kittens service: 2021/05/08 19:49:47 [::1]:61384 GET /kittens/search/name 200 OK {"name":"Fat Freddys Cat"} [{"id":3,"name":"Fat Freddys Cat","weight":20}]
+ 0.9692379584487651
+kittens service: 2021/05/08 19:49:47 [::1]:61385 GET /kittens/search/id 200 OK {"id": 3} {"id":3,"name":"Fat Freddys Cat","weight":20}
+ 0.941409703064974
+kittens service: 2021/05/08 19:49:47 [::1]:61386 DELETE /kittens/delete/all 200 OK   1.0303832706091693
+kittens service: 2021/05/08 19:49:47 [::1]:61387 GET /kittens/list 404 Not Found   1.0354101563763196
+kittens service: 2021/05/08 19:49:47 [::1]:61388 DELETE /kittens/delete/all 200 OK   1.3583836946746217
+kittens service: 2021/05/08 19:49:47 [::1]:61391 DELETE /kittens/delete/all 200 OK   1.8625976498569046
+kittens service: 2021/05/08 19:49:47 [::1]:61392 DELETE /kittens/delete/all 200 OK   2.98647890065521
+kittens service: 2021/05/08 19:49:47 [::1]:61389 DELETE /kittens/delete/all 200 OK   2.367242962769362
+kittens service: 2021/05/08 19:49:47 [::1]:61394 DELETE /kittens/delete/all 200 OK   3.565764132871003
+kittens service: 2021/05/08 19:49:47 [::1]:61390 DELETE /kittens/delete/all 200 OK   4.141792253330938
+kittens service: 2021/05/08 19:49:47 [::1]:61395 DELETE /kittens/delete/all 200 OK   4.807947591825717
+kittens service: 2021/05/08 19:49:47 [::1]:61393 DELETE /kittens/delete/all 200 OK   5.366725166546639
+kittens service: 2021/05/08 19:49:47 [::1]:61407 GET /kittens/list 404 Not Found   5.165129994511372
+kittens service: 2021/05/08 19:49:47 [::1]:61396 DELETE /kittens/delete/all 200 OK   5.787347414220316
+kittens service: 2021/05/08 19:49:47 [::1]:61397 DELETE /kittens/delete/all 200 OK   6.494202419754489
+kittens service: 2021/05/08 19:49:47 [::1]:61413 GET /kittens/delete/all 405 Method Not Allowed   6.075221618480006
+kittens service: 2021/05/08 19:49:47 [::1]:61410 GET /kittens/list 404 Not Found   5.964523449545813
+kittens service: 2021/05/08 19:49:47 [::1]:61409 GET /kittens/list 404 Not Found   5.797315485058987
+kittens service: 2021/05/08 19:49:47 [::1]:61411 GET /kittens/list 404 Not Found   5.678385453764859
+kittens service: 2021/05/08 19:49:47 [::1]:61412 GET /kittens/list 404 Not Found   5.27120662499089
+kittens service: 2021/05/08 19:49:47 [::1]:61414 GET /kittens/list 404 Not Found   5.445586392231642
+kittens service: 2021/05/08 19:49:47 [::1]:61415 GET /kittens/list 404 Not Found   5.108077165314059
+kittens service: 2021/05/08 19:49:47 [::1]:61408 GET /kittens/list 404 Not Found   5.1309689611002485
+kittens service: 2021/05/08 19:49:47 [::1]:61417 POST /kittens/list 405 Method Not Allowed   4.799938705545394
+kittens service: 2021/05/08 19:49:47 [::1]:61416 GET /kittens/list 404 Not Found   4.708342660026336
+kittens service: 2021/05/08 19:49:47 [::1]:61419 GET /kittens/delete/all 405 Method Not Allowed   4.444088294863347
+kittens service: 2021/05/08 19:49:47 [::1]:61420 GET /kittens/delete/all 405 Method Not Allowed   4.157372921001196
+kittens service: 2021/05/08 19:49:47 [::1]:61421 GET /kittens/delete/all 405 Method Not Allowed   3.8891553131946677
+kittens service: 2021/05/08 19:49:47 [::1]:61425 GET /kittens/delete/all 405 Method Not Allowed   3.6410807768595275
+kittens service: 2021/05/08 19:49:47 [::1]:61418 GET /kittens/list 404 Not Found   3.6876755654492355
+kittens service: 2021/05/08 19:49:47 [::1]:61423 GET /kittens/delete/all 405 Method Not Allowed   3.4497610128396072
+kittens service: 2021/05/08 19:49:47 [::1]:61424 GET /kittens/delete/all 405 Method Not Allowed   3.2271957862047946
+kittens service: 2021/05/08 19:49:47 [::1]:61422 POST /kittens/insert 400 Bad Request   3.0189896064496464
+kittens service: 2021/05/08 19:49:47 [::1]:61426 GET /kittens/delete/all 405 Method Not Allowed   2.8274547931303142
+kittens service: 2021/05/08 19:49:47 [::1]:61427 POST /kittens/list 405 Method Not Allowed   2.6450383548638423
+kittens service: 2021/05/08 19:49:47 [::1]:61429 GET /kittens/delete/all 405 Method Not Allowed   2.474390719066175
+kittens service: 2021/05/08 19:49:47 [::1]:61428 POST /kittens/list 405 Method Not Allowed   2.3147526081586802
+kittens service: 2021/05/08 19:49:47 [::1]:61430 POST /kittens/list 405 Method Not Allowed   2.165413730212959
+kittens service: 2021/05/08 19:49:47 [::1]:61432 POST /kittens/list 405 Method Not Allowed   2.025709618586317
+kittens service: 2021/05/08 19:49:47 [::1]:61431 POST /kittens/list 405 Method Not Allowed   1.8950186754517158
+kittens service: 2021/05/08 19:49:47 [::1]:61436 POST /kittens/insert 400 Bad Request   1.772759406067734
+kittens service: 2021/05/08 19:49:47 [::1]:61435 POST /kittens/insert 400 Bad Request   1.5924402294515763
+kittens service: 2021/05/08 19:49:47 [::1]:61434 POST /kittens/list 405 Method Not Allowed   1.601534408196636
+kittens service: 2021/05/08 19:49:47 [::1]:61433 GET /kittens/delete/all 405 Method Not Allowed   1.6583878314827192
+kittens service: 2021/05/08 19:49:47 [::1]:61437 POST /kittens/list 405 Method Not Allowed   1.6640418657323368
+kittens service: 2021/05/08 19:49:47 [::1]:61439 POST /kittens/insert 400 Bad Request   1.55668432600767
+kittens service: 2021/05/08 19:49:47 [::1]:61438 POST /kittens/list 405 Method Not Allowed   1.4562530791684656
+kittens service: 2021/05/08 19:49:47 [::1]:61441 POST /kittens/insert 400 Bad Request   1.3623012676092099
+kittens service: 2021/05/08 19:49:47 [::1]:61440 POST /kittens/insert 400 Bad Request   1.3623012676092099
+kittens service: 2021/05/08 19:49:47 [::1]:61443 POST /kittens/insert 400 Bad Request   1.2744108632473257
+kittens service: 2021/05/08 19:49:47 [::1]:61444 POST /kittens/insert 400 Bad Request   1.1152752715827272
+kittens service: 2021/05/08 19:49:47 [::1]:61442 POST /kittens/insert 400 Bad Request {"nae": "Felix", "weight": 12.3}  1.1921908075539498
+kittens service: 2021/05/08 19:49:47 [::1]:61445 POST /kittens/insert 400 Bad Request   1.0811736411580353
+kittens service: 2021/05/08 19:49:47 [::1]:61446 POST /kittens/list 405 Method Not Allowed   1.0114205030188073
+kittens service: 2021/05/08 19:49:47 [::1]:61447 POST /kittens/insert 400 Bad Request   0.9461675673401746
+kittens service: 2021/05/08 19:49:47 [::1]:61450 POST /kittens/insert 400 Bad Request   0.8851244984795182
+kittens service: 2021/05/08 19:49:47 [::1]:61448 POST /kittens/insert 400 Bad Request   0.86087775664213
+kittens service: 2021/05/08 19:49:47 [::1]:61451 POST /kittens/insert 400 Bad Request   0.8115161220978475
+kittens service: 2021/05/08 19:49:47 [::1]:61449 POST /kittens/insert 400 Bad Request   0.8148275787942507
+kittens service: 2021/05/08 19:49:47 [::1]:61452 POST /kittens/insert 400 Bad Request {"nae": "Felix", "weight": 12.3}  0.7591602432528252
+kittens service: 2021/05/08 19:49:47 [::1]:61453 POST /kittens/insert 400 Bad Request {"Id": 3, "name": "Felix", "weight": 12.3}  0.745853130784901
+kittens service: 2021/05/08 19:49:47 [::1]:61454 POST /kittens/insert 400 Bad Request   0.6977335739600687
+kittens service: 2021/05/08 19:49:47 [::1]:61455 POST /kittens/insert 400 Bad Request   0.6527185046723224
+kittens service: 2021/05/08 19:49:47 [::1]:61459 POST /kittens/insert 400 Bad Request   0.5712135925384216
+kittens service: 2021/05/08 19:49:47 [::1]:61458 POST /kittens/insert 400 Bad Request   0.5343611026972332
+kittens service: 2021/05/08 19:49:47 [::1]:61457 POST /kittens/insert 400 Bad Request   0.6106076334031404
+kittens service: 2021/05/08 19:49:47 [::1]:61456 POST /kittens/insert 400 Bad Request {"nae": "Felix", "weight": 12.3}  0.4998861928457988
+kittens service: 2021/05/08 19:49:47 [::1]:61462 POST /kittens/insert 400 Bad Request {"nae": "Felix", "weight": 12.3}  0.46763547072671513
+kittens service: 2021/05/08 19:49:47 [::1]:61461 POST /kittens/insert 400 Bad Request {"nae": "Felix", "weight": 12.3}  0.47154285971208837
+kittens service: 2021/05/08 19:49:47 [::1]:61464 POST /kittens/insert 400 Bad Request {"Id": 3, "name": "Felix", "weight": 12.3}  0.4411207397306633
+kittens service: 2021/05/08 19:49:47 [::1]:61465 POST /kittens/insert 400 Bad Request {"nae": "Felix", "weight": 12.3}  0.4126613371673948
+kittens service: 2021/05/08 19:49:47 [::1]:61460 POST /kittens/insert 400 Bad Request   0.386038025092079
+kittens service: 2021/05/08 19:49:47 [::1]:61467 POST /kittens/insert 400 Bad Request {"nae": "Felix", "weight": 12.3}  0.3611323460538804
+kittens service: 2021/05/08 19:49:47 [::1]:61466 POST /kittens/insert 400 Bad Request {"nae": "Felix", "weight": 12.3}  0.3942334850181462
+kittens service: 2021/05/08 19:49:47 [::1]:61463 POST /kittens/insert 200 OK {"name": "Felix", "weight": 12.3} {"id":4}
+ 0.6592119698556852
+kittens service: 2021/05/08 19:49:47 [::1]:61468 POST /kittens/insert 400 Bad Request {"nae": "Felix", "weight": 12.3}  0.619914423413383
+kittens service: 2021/05/08 19:49:47 [::1]:61469 POST /kittens/insert 400 Bad Request {"Id": 3, "name": "Felix", "weight": 12.3}  0.5799199444834873
+kittens service: 2021/05/08 19:49:47 [::1]:61472 POST /kittens/insert 400 Bad Request {"Id": 3, "name": "Felix", "weight": 12.3}  0.5425057545168107
+kittens service: 2021/05/08 19:49:47 [::1]:61471 POST /kittens/insert 400 Bad Request {"Id": 3, "name": "Felix", "weight": 12.3}  0.5075053832576617
+kittens service: 2021/05/08 19:49:47 [::1]:61475 POST /kittens/insert 400 Bad Request {"nae": "Felix", "weight": 12.3}  0.47476310046684483
+kittens service: 2021/05/08 19:49:47 [::1]:61473 POST /kittens/insert 400 Bad Request {"Id": 3, "name": "Felix", "weight": 12.3}  0.444133223017371
+kittens service: 2021/05/08 19:49:47 [::1]:61478 POST /kittens/insert 400 Bad Request {"Id": 3, "name": "Felix", "weight": 12.3}  0.4154794666936697
+kittens service: 2021/05/08 19:49:47 [::1]:61479 POST /kittens/insert 400 Bad Request {"Id": 3, "name": "Felix", "weight": 12.3}  0.38867433981020716
+kittens service: 2021/05/08 19:49:47 [::1]:61480 POST /kittens/insert 400 Bad Request {"Id": 3, "name": "Felix", "weight": 12.3}  0.3635985759514841
+kittens service: 2021/05/08 19:49:47 [::1]:61470 POST /kittens/insert 200 OK {"name": "Felix", "weight": 12.3} {"id":5}
+ 0.6505277000836465
+kittens service: 2021/05/08 19:49:47 [::1]:61476 POST /kittens/insert 200 OK {"name": "Felix", "weight": 12.3} {"id":7}
+ 0.8564420420137339
+kittens service: 2021/05/08 19:49:47 [::1]:61477 POST /kittens/insert 200 OK {"name": "Felix", "weight": 12.3} {"id":9}
+ 1.0105619102709122
+kittens service: 2021/05/08 19:49:47 [::1]:61483 POST /kittens/insert 400 Bad Request {"Id": 3, "name": "Felix", "weight": 12.3}  0.945364367672789
+kittens service: 2021/05/08 19:49:47 [::1]:61481 POST /kittens/insert 200 OK {"name": "Felix", "weight": 12.3} {"id":8}
+ 1.1276763439519641
+kittens service: 2021/05/08 19:49:47 [::1]:61474 POST /kittens/insert 200 OK {"name": "Garfield", "weight": 15.0} {"id":6}
+ 1.4807294830518374
+kittens service: 2021/05/08 19:49:47 [::1]:61492 GET /kittens/insert 405 Method Not Allowed {"name": "Fat Freddys Cat", "weight": 20.0}  1.3851985486613965
+kittens service: 2021/05/08 19:49:47 [::1]:61482 POST /kittens/insert 200 OK {"name": "Felix", "weight": 12.3} {"id":10}
+ 1.7646825132638868
+kittens service: 2021/05/08 19:49:47 [::1]:61485 POST /kittens/insert 200 OK {"name": "Felix", "weight": 12.3} {"id":12}
+ 2.046277189827507
+kittens service: 2021/05/08 19:49:47 [::1]:61486 POST /kittens/insert 200 OK {"name": "Felix", "weight": 12.3} {"id":14}
+ 2.422909394874394
+kittens service: 2021/05/08 19:49:47 [::1]:61490 POST /kittens/insert 200 OK {"name": "Garfield", "weight": 15.0} {"id":17}
+ 2.2915514221071107
+kittens service: 2021/05/08 19:49:47 [::1]:61484 POST /kittens/insert 200 OK {"name": "Felix", "weight": 12.3} {"id":11}
+ 2.730870079076046
+kittens service: 2021/05/08 19:49:47 [::1]:61487 POST /kittens/insert 200 OK {"name": "Felix", "weight": 12.3} {"id":13}
+ 2.9568010417163015
+kittens service: 2021/05/08 19:49:47 [::1]:61491 POST /kittens/insert 200 OK {"name": "Garfield", "weight": 15.0} {"id":16}
+ 3.081549361605572
+kittens service: 2021/05/08 19:49:47 [::1]:61489 POST /kittens/insert 200 OK {"name": "Garfield", "weight": 15.0} {"id":15}
+ 2.191672209838636
+kittens service: 2021/05/08 19:49:47 [::1]:61488 POST /kittens/insert 200 OK {"name": "Garfield", "weight": 15.0} {"id":18}
+ 3.144120370534245
+kittens service: 2021/05/08 19:49:47 [::1]:61494 POST /kittens/insert 200 OK {"name": "Garfield", "weight": 15.0} {"id":19}
+ 3.120512604693326
+kittens service: 2021/05/08 19:49:47 [::1]:61493 POST /kittens/insert 200 OK {"name": "Fat Freddys Cat", "weight": 20.0} {"id":20}
+ 3.0865827592292403
+kittens service: 2021/05/08 19:49:47 [::1]:61496 GET /kittens/insert 405 Method Not Allowed {"name": "Fat Freddys Cat", "weight": 20.0}  2.8874483876660637
+kittens service: 2021/05/08 19:49:47 [::1]:61499 GET /kittens/insert 405 Method Not Allowed {"name": "Fat Freddys Cat", "weight": 20.0}  2.701161394913415
+kittens service: 2021/05/08 19:49:47 [::1]:61501 GET /kittens/insert 405 Method Not Allowed {"name": "Fat Freddys Cat", "weight": 20.0}  2.526892917822227
+kittens service: 2021/05/08 19:49:47 [::1]:61502 GET /kittens/insert 405 Method Not Allowed {"name": "Fat Freddys Cat", "weight": 20.0}  2.396680471511116
+kittens service: 2021/05/08 19:49:47 [::1]:61503 GET /kittens/insert 405 Method Not Allowed {"name": "Fat Freddys Cat", "weight": 20.0}  2.2420559249620116
+kittens service: 2021/05/08 19:49:47 [::1]:61495 POST /kittens/insert 200 OK {"name": "Garfield", "weight": 15.0} {"id":23}
+ 2.3360910265773662
+kittens service: 2021/05/08 19:49:47 [::1]:61500 POST /kittens/insert 200 OK {"name": "Garfield", "weight": 15.0} {"id":24}
+ 2.5550297121244174
+kittens service: 2021/05/08 19:49:47 [::1]:61497 POST /kittens/insert 200 OK {"name": "Garfield", "weight": 15.0} {"id":22}
+ 2.71653747263252
+kittens service: 2021/05/08 19:49:47 [::1]:61498 POST /kittens/insert 200 OK {"name": "Garfield", "weight": 15.0} {"id":21}
+ 2.4240593474433427
+kittens service: 2021/05/08 19:49:47 [::1]:61504 GET /kittens/list 200 OK  [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":6,"name":"Garfield","weight":15},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3}]
+ 2.785167313107842
+kittens service: 2021/05/08 19:49:47 [::1]:61505 POST /kittens/insert 200 OK {"name": "Fat Freddys Cat", "weight": 20.0} {"id":25}
+ 2.757943615487981
+kittens service: 2021/05/08 19:49:47 [::1]:61506 POST /kittens/insert 200 OK {"name": "Fat Freddys Cat", "weight": 20.0} {"id":27}
+ 2.723811769327466
+kittens service: 2021/05/08 19:49:47 [::1]:61507 POST /kittens/insert 200 OK {"name": "Fat Freddys Cat", "weight": 20.0} {"id":26}
+ 2.759120687435372
+kittens service: 2021/05/08 19:49:47 [::1]:61511 GET /kittens/insert 405 Method Not Allowed {"name": "Fat Freddys Cat", "weight": 20.0}  2.581112901149219
+kittens service: 2021/05/08 19:49:47 [::1]:61509 GET /kittens/insert 405 Method Not Allowed {"name": "Fat Freddys Cat", "weight": 20.0}  2.4154927139783013
+kittens service: 2021/05/08 19:49:47 [::1]:61510 GET /kittens/insert 405 Method Not Allowed {"name": "Fat Freddys Cat", "weight": 20.0}  2.3043641517861526
+kittens service: 2021/05/08 19:49:47 [::1]:61513 GET /kittens/insert 405 Method Not Allowed {"name": "Fat Freddys Cat", "weight": 20.0}  2.1556954968322075
+kittens service: 2021/05/08 19:49:47 [::1]:61516 GET /kittens/search/name 400 Bad Request   2.016618368004323
+kittens service: 2021/05/08 19:49:47 [::1]:61508 POST /kittens/insert 200 OK {"name": "Fat Freddys Cat", "weight": 20.0} {"id":28}
+ 2.235791376520173
+kittens service: 2021/05/08 19:49:47 [::1]:61512 POST /kittens/insert 200 OK {"name": "Fat Freddys Cat", "weight": 20.0} {"id":29}
+ 2.2965467715833876
+kittens service: 2021/05/08 19:49:47 [::1]:61517 GET /kittens/list 200 OK  [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":6,"name":"Garfield","weight":15},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3}]
+ 2.3597889153522016
+kittens service: 2021/05/08 19:49:47 [::1]:61514 GET /kittens/list 200 OK  [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":6,"name":"Garfield","weight":15},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3}]
+ 2.47615092081335
+kittens service: 2021/05/08 19:49:47 [::1]:61515 GET /kittens/list 200 OK  [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":6,"name":"Garfield","weight":15},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3}]
+ 2.5850057001157145
+kittens service: 2021/05/08 19:49:47 [::1]:61518 GET /kittens/search/name 400 Bad Request   2.418231138817927
+kittens service: 2021/05/08 19:49:47 [::1]:61525 GET /kittens/search/name 400 Bad Request   2.2622162266361254
+kittens service: 2021/05/08 19:49:47 [::1]:61528 GET /kittens/search/name 400 Bad Request   2.1174732442725044
+kittens service: 2021/05/08 19:49:47 [::1]:61521 POST /kittens/insert 200 OK {"name": "Fat Freddys Cat", "weight": 20.0} {"id":32}
+ 2.2328040027065366
+kittens service: 2021/05/08 19:49:47 [::1]:61526 GET /kittens/search/name 400 Bad Request {"nme":"Garfield"}  2.0887521315641795
+kittens service: 2021/05/08 19:49:47 [::1]:61522 POST /kittens/insert 200 OK {"name": "Fat Freddys Cat", "weight": 20.0} {"id":33}
+ 2.2586971553342323
+kittens service: 2021/05/08 19:49:47 [::1]:61527 GET /kittens/search/name 400 Bad Request   2.1573876614417014
+kittens service: 2021/05/08 19:49:47 [::1]:61520 POST /kittens/insert 200 OK {"name": "Fat Freddys Cat", "weight": 20.0} {"id":30}
+ 2.4393626510261077
+kittens service: 2021/05/08 19:49:47 [::1]:61523 GET /kittens/list 200 OK  [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":6,"name":"Garfield","weight":15},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3}]
+ 2.5929263509599076
+kittens service: 2021/05/08 19:49:47 [::1]:61529 GET /kittens/search/name 400 Bad Request   2.4595375541237847
+kittens service: 2021/05/08 19:49:47 [::1]:61524 GET /kittens/list 200 OK  [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":6,"name":"Garfield","weight":15},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3}]
+ 2.6234770667609606
+kittens service: 2021/05/08 19:49:47 [::1]:61519 POST /kittens/insert 200 OK {"name": "Fat Freddys Cat", "weight": 20.0} {"id":31}
+ 2.917826933421544
+kittens service: 2021/05/08 19:49:47 [::1]:61532 GET /kittens/search/name 400 Bad Request   2.729580034491122
+kittens service: 2021/05/08 19:49:47 [::1]:61536 GET /kittens/search/name 400 Bad Request   2.5534780967820176
+kittens service: 2021/05/08 19:49:47 [::1]:61533 GET /kittens/search/name 404 Not Found {"name":"Guarimba"}  2.5518408002154356
+kittens service: 2021/05/08 19:49:47 [::1]:61535 GET /kittens/search/name 400 Bad Request   2.4220396597098666
+kittens service: 2021/05/08 19:49:47 [::1]:61530 GET /kittens/list 200 OK  [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":6,"name":"Garfield","weight":15},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3}]
+ 2.5890768776208914
+kittens service: 2021/05/08 19:49:47 [::1]:61538 GET /kittens/search/name 400 Bad Request   2.2657790365027783
+kittens service: 2021/05/08 19:49:47 [::1]:61534 GET /kittens/search/name 400 Bad Request {"nme":"Garfield"}  2.11959974382518
+kittens service: 2021/05/08 19:49:47 [::1]:61531 GET /kittens/list 200 OK  [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":6,"name":"Garfield","weight":15},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3}]
+ 2.312373953900975
+kittens service: 2021/05/08 19:49:47 [::1]:61540 GET /kittens/search/name 400 Bad Request {"nme":"Garfield"}  2.2305562794557505
+kittens service: 2021/05/08 19:49:47 [::1]:61542 GET /kittens/search/name 400 Bad Request   2.151926842071509
+kittens service: 2021/05/08 19:49:47 [::1]:61544 GET /kittens/search/name 400 Bad Request {"nme":"Garfield"}  2.013092852260444
+kittens service: 2021/05/08 19:49:47 [::1]:61546 GET /kittens/search/name 400 Bad Request   1.883215894050093
+kittens service: 2021/05/08 19:49:47 [::1]:61541 GET /kittens/search/name 400 Bad Request   1.7617180944339579
+kittens service: 2021/05/08 19:49:47 [::1]:61545 GET /kittens/search/name 400 Bad Request   1.6817040238253158
+kittens service: 2021/05/08 19:49:47 [::1]:61537 GET /kittens/list 200 OK  [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":6,"name":"Garfield","weight":15},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3}]
+ 1.9689618287398114
+kittens service: 2021/05/08 19:49:47 [::1]:61539 GET /kittens/list 200 OK  [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":6,"name":"Garfield","weight":15},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3}]
+ 2.373899775272727
+kittens service: 2021/05/08 19:49:47 [::1]:61543 GET /kittens/search/name 200 OK {"name":"Garfield"} [{"id":6,"name":"Garfield","weight":15},{"id":15,"name":"Garfield","weight":15},{"id":16,"name":"Garfield","weight":15},{"id":17,"name":"Garfield","weight":15},{"id":18,"name":"Garfield","weight":15},{"id":19,"name":"Garfield","weight":15},{"id":23,"name":"Garfield","weight":15},{"id":24,"name":"Garfield","weight":15},{"id":22,"name":"Garfield","weight":15},{"id":21,"name":"Garfield","weight":15}]
+ 2.4212868865454547
+kittens service: 2021/05/08 19:49:47 [::1]:61548 GET /kittens/search/name 400 Bad Request   2.2650748293489738
+kittens service: 2021/05/08 19:49:47 [::1]:61551 GET /kittens/search/name 400 Bad Request {"nme":"Garfield"}  2.1189409693909758
+kittens service: 2021/05/08 19:49:47 [::1]:61552 GET /kittens/search/name 400 Bad Request   1.9822351003980097
+kittens service: 2021/05/08 19:49:47 [::1]:61547 GET /kittens/search/name 404 Not Found {"name":"Guarimba"}  2.1804779971465256
+kittens service: 2021/05/08 19:49:47 [::1]:61549 GET /kittens/search/name 404 Not Found {"name":"Guarimba"}  2.1979116747499754
+kittens service: 2021/05/08 19:49:47 [::1]:61553 GET /kittens/search/name 400 Bad Request {"nme":"Garfield"}  2.0561109215403
+kittens service: 2021/05/08 19:49:47 [::1]:61554 GET /kittens/search/name 400 Bad Request {"nme":"Garfield"}  1.9454263459570547
+kittens service: 2021/05/08 19:49:47 [::1]:61550 GET /kittens/search/name 404 Not Found {"name":"Guarimba"}  2.106508517185632
+kittens service: 2021/05/08 19:49:47 [::1]:61555 GET /kittens/search/name 400 Bad Request   1.8481353412623485
+kittens service: 2021/05/08 19:49:47 [::1]:61556 GET /kittens/search/id 400 Bad Request   1.9724757096252687
+kittens service: 2021/05/08 19:49:47 [::1]:61557 GET /kittens/search/name 400 Bad Request   1.731816932148649
+kittens service: 2021/05/08 19:49:47 [::1]:61559 GET /kittens/search/name 400 Bad Request   1.6246222913648651
+kittens service: 2021/05/08 19:49:47 [::1]:61558 GET /kittens/search/name 404 Not Found {"name":"Guarimba"}  1.765466014502616
+kittens service: 2021/05/08 19:49:47 [::1]:61560 GET /kittens/search/name 404 Not Found {"name":"Guarimba"}  1.899829497437931
+kittens service: 2021/05/08 19:49:47 [::1]:61565 GET /kittens/search/name 400 Bad Request   1.7772598524419356
+kittens service: 2021/05/08 19:49:47 [::1]:61566 GET /kittens/search/id 400 Bad Request   1.6625979264779398
+kittens service: 2021/05/08 19:49:47 [::1]:61562 GET /kittens/search/name 404 Not Found {"name":"Guarimba"}  1.7866109634793632
+kittens service: 2021/05/08 19:49:47 [::1]:61561 GET /kittens/search/name 200 OK {"name":"Garfield"} [{"id":6,"name":"Garfield","weight":15},{"id":15,"name":"Garfield","weight":15},{"id":16,"name":"Garfield","weight":15},{"id":17,"name":"Garfield","weight":15},{"id":18,"name":"Garfield","weight":15},{"id":19,"name":"Garfield","weight":15},{"id":23,"name":"Garfield","weight":15},{"id":24,"name":"Garfield","weight":15},{"id":22,"name":"Garfield","weight":15},{"id":21,"name":"Garfield","weight":15}]
+ 1.9219263851903718
+kittens service: 2021/05/08 19:49:47 [::1]:61567 GET /kittens/search/name 400 Bad Request {"nme":"Garfield"}  1.7979311345329287
+kittens service: 2021/05/08 19:49:47 [::1]:61563 GET /kittens/search/name 200 OK {"name":"Garfield"} [{"id":6,"name":"Garfield","weight":15},{"id":15,"name":"Garfield","weight":15},{"id":16,"name":"Garfield","weight":15},{"id":17,"name":"Garfield","weight":15},{"id":18,"name":"Garfield","weight":15},{"id":19,"name":"Garfield","weight":15},{"id":23,"name":"Garfield","weight":15},{"id":24,"name":"Garfield","weight":15},{"id":22,"name":"Garfield","weight":15},{"id":21,"name":"Garfield","weight":15}]
+ 1.9748710613372562
+kittens service: 2021/05/08 19:49:47 [::1]:61564 GET /kittens/search/name 200 OK {"name":"Garfield"} [{"id":6,"name":"Garfield","weight":15},{"id":15,"name":"Garfield","weight":15},{"id":16,"name":"Garfield","weight":15},{"id":17,"name":"Garfield","weight":15},{"id":18,"name":"Garfield","weight":15},{"id":19,"name":"Garfield","weight":15},{"id":23,"name":"Garfield","weight":15},{"id":24,"name":"Garfield","weight":15},{"id":22,"name":"Garfield","weight":15},{"id":21,"name":"Garfield","weight":15}]
+ 2.0894449142399925
+kittens service: 2021/05/08 19:49:47 [::1]:61568 GET /kittens/search/name 400 Bad Request {"nme":"Garfield"}  1.9004342186703365
+kittens service: 2021/05/08 19:49:47 [::1]:61571 GET /kittens/search/name 400 Bad Request {"nme":"Garfield"}  1.9546420165470897
+kittens service: 2021/05/08 19:49:47 [::1]:61573 GET /kittens/search/name 400 Bad Request {"d": 1}  1.8741876928988903
+kittens service: 2021/05/08 19:49:47 [::1]:61574 GET /kittens/search/id 400 Bad Request   1.7532723578731555
+kittens service: 2021/05/08 19:49:47 [::1]:61576 GET /kittens/search/id 400 Bad Request   1.6493451089781133
+kittens service: 2021/05/08 19:49:47 [::1]:61570 GET /kittens/search/name 200 OK {"name":"Garfield"} [{"id":6,"name":"Garfield","weight":15},{"id":15,"name":"Garfield","weight":15},{"id":16,"name":"Garfield","weight":15},{"id":17,"name":"Garfield","weight":15},{"id":18,"name":"Garfield","weight":15},{"id":19,"name":"Garfield","weight":15},{"id":23,"name":"Garfield","weight":15},{"id":24,"name":"Garfield","weight":15},{"id":22,"name":"Garfield","weight":15},{"id":21,"name":"Garfield","weight":15}]
+ 1.7806776825924284
+kittens service: 2021/05/08 19:49:47 [::1]:61572 GET /kittens/search/id 400 Bad Request   1.7332533159735621
+kittens service: 2021/05/08 19:49:47 [::1]:61569 GET /kittens/search/name 200 OK {"name":"Garfield"} [{"id":6,"name":"Garfield","weight":15},{"id":15,"name":"Garfield","weight":15},{"id":16,"name":"Garfield","weight":15},{"id":17,"name":"Garfield","weight":15},{"id":18,"name":"Garfield","weight":15},{"id":19,"name":"Garfield","weight":15},{"id":23,"name":"Garfield","weight":15},{"id":24,"name":"Garfield","weight":15},{"id":22,"name":"Garfield","weight":15},{"id":21,"name":"Garfield","weight":15}]
+ 2.0156692310720423
+kittens service: 2021/05/08 19:49:47 [::1]:61577 GET /kittens/search/name 404 Not Found {"name":"Guarimba"}  2.0162325064867495
+kittens service: 2021/05/08 19:49:47 [::1]:61579 GET /kittens/search/name 404 Not Found {"name":"Guarimba"}  2.0167594415521206
+kittens service: 2021/05/08 19:49:47 [::1]:61581 GET /kittens/search/id 400 Bad Request   1.9271362517745645
+kittens service: 2021/05/08 19:49:47 [::1]:61580 GET /kittens/search/id 400 Bad Request   1.8028048806923347
+kittens service: 2021/05/08 19:49:47 [::1]:61578 GET /kittens/search/name 404 Not Found {"name":"Guarimba"}  1.922946501292829
+kittens service: 2021/05/08 19:49:47 [::1]:61582 GET /kittens/search/id 400 Bad Request   1.7988854366932918
+kittens service: 2021/05/08 19:49:47 [::1]:61575 GET /kittens/search/name 200 OK {"name":"Garfield"} [{"id":6,"name":"Garfield","weight":15},{"id":15,"name":"Garfield","weight":15},{"id":16,"name":"Garfield","weight":15},{"id":17,"name":"Garfield","weight":15},{"id":18,"name":"Garfield","weight":15},{"id":19,"name":"Garfield","weight":15},{"id":23,"name":"Garfield","weight":15},{"id":24,"name":"Garfield","weight":15},{"id":22,"name":"Garfield","weight":15},{"id":21,"name":"Garfield","weight":15}]
+ 2.096718634325983
+kittens service: 2021/05/08 19:49:47 [::1]:61584 GET /kittens/search/id 400 Bad Request   1.9952658192081776
+kittens service: 2021/05/08 19:49:47 [::1]:61585 GET /kittens/search/id 400 Bad Request   1.8890809276463596
+kittens service: 2021/05/08 19:49:47 [::1]:61587 GET /kittens/search/id 400 Bad Request   1.7742950613465944
+kittens service: 2021/05/08 19:49:47 [::1]:61583 GET /kittens/search/id 200 OK {"id": 20} {"id":20,"name":"Fat Freddys Cat","weight":20}
+ 1.914321186421008
+kittens service: 2021/05/08 19:49:47 [::1]:61590 GET /kittens/search/id 400 Bad Request   1.790816593748685
+kittens service: 2021/05/08 19:49:47 [::1]:61586 GET /kittens/search/name 400 Bad Request {"d": 1}  1.675280039313286
+kittens service: 2021/05/08 19:49:47 [::1]:61592 GET /kittens/search/name 400 Bad Request {"d": 1}  1.5671974561317839
+kittens service: 2021/05/08 19:49:47 [::1]:61593 GET /kittens/search/name 400 Bad Request {"d": 1}  1.4660879428329592
+kittens service: 2021/05/08 19:49:47 [::1]:61594 GET /kittens/search/id 400 Bad Request   1.3715016239405102
+kittens service: 2021/05/08 19:49:47 [::1]:61596 GET /kittens/search/name 400 Bad Request {"d": 1}  1.2830176482024127
+kittens service: 2021/05/08 19:49:47 [::1]:61597 GET /kittens/search/id 400 Bad Request   1.2002423160603217
+kittens service: 2021/05/08 19:49:47 [::1]:61588 GET /kittens/search/name 200 OK {"name":"Garfield"} [{"id":6,"name":"Garfield","weight":15},{"id":15,"name":"Garfield","weight":15},{"id":16,"name":"Garfield","weight":15},{"id":17,"name":"Garfield","weight":15},{"id":18,"name":"Garfield","weight":15},{"id":19,"name":"Garfield","weight":15},{"id":23,"name":"Garfield","weight":15},{"id":24,"name":"Garfield","weight":15},{"id":22,"name":"Garfield","weight":15},{"id":21,"name":"Garfield","weight":15}]
+ 1.7348380726396782
+kittens service: 2021/05/08 19:49:47 [::1]:61591 GET /kittens/search/name 200 OK {"name":"Garfield"} [{"id":6,"name":"Garfield","weight":15},{"id":15,"name":"Garfield","weight":15},{"id":16,"name":"Garfield","weight":15},{"id":17,"name":"Garfield","weight":15},{"id":18,"name":"Garfield","weight":15},{"id":19,"name":"Garfield","weight":15},{"id":23,"name":"Garfield","weight":15},{"id":24,"name":"Garfield","weight":15},{"id":22,"name":"Garfield","weight":15},{"id":21,"name":"Garfield","weight":15}]
+ 1.451523456959656
+kittens service: 2021/05/08 19:49:47 [::1]:61589 GET /kittens/search/name 200 OK {"name":"Garfield"} [{"id":6,"name":"Garfield","weight":15},{"id":15,"name":"Garfield","weight":15},{"id":16,"name":"Garfield","weight":15},{"id":17,"name":"Garfield","weight":15},{"id":18,"name":"Garfield","weight":15},{"id":19,"name":"Garfield","weight":15},{"id":23,"name":"Garfield","weight":15},{"id":24,"name":"Garfield","weight":15},{"id":22,"name":"Garfield","weight":15},{"id":21,"name":"Garfield","weight":15}]
+ 2.1419904550500215
+kittens service: 2021/05/08 19:49:47 [::1]:61600 GET /kittens/search/name 400 Bad Request {"d": 1}  2.003797522466149
+kittens service: 2021/05/08 19:49:47 [::1]:61595 GET /kittens/search/id 404 Not Found {"id": 2}  2.202262198436075
+kittens service: 2021/05/08 19:49:47 [::1]:61602 GET /kittens/search/id 400 Bad Request   2.0601807662789087
+kittens service: 2021/05/08 19:49:47 [::1]:61599 GET /kittens/search/id 200 OK {"id": 20} {"id":20,"name":"Fat Freddys Cat","weight":20}
+ 2.168594910389947
+kittens service: 2021/05/08 19:49:47 [::1]:61601 GET /kittens/search/id 200 OK {"id": 20} {"id":20,"name":"Fat Freddys Cat","weight":20}
+ 2.2629113677841444
+kittens service: 2021/05/08 19:49:47 [::1]:61603 GET /kittens/search/name 400 Bad Request {"d": 1}  2.116917085991619
+kittens service: 2021/05/08 19:49:47 [::1]:61605 GET /kittens/search/id 400 Bad Request   2.0267998546373214
+kittens service: 2021/05/08 19:49:47 [::1]:61598 GET /kittens/search/id 200 OK {"id": 20} {"id":20,"name":"Fat Freddys Cat","weight":20}
+ 2.2142385736929784
+kittens service: 2021/05/08 19:49:47 [::1]:61607 GET /kittens/search/id 400 Bad Request   2.1054231818418185
+kittens service: 2021/05/08 19:49:47 [::1]:61604 GET /kittens/search/id 200 OK {"id": 20} {"id":20,"name":"Fat Freddys Cat","weight":20}
+ 2.196492653981056
+kittens service: 2021/05/08 19:49:47 [::1]:61608 GET /kittens/search/id 400 Bad Request   2.0547834504984075
+kittens service: 2021/05/08 19:49:47 [::1]:61610 DELETE /kittens/delete/name 400 Bad Request   2.0023329053049617
+kittens service: 2021/05/08 19:49:47 [::1]:61611 GET /kittens/search/id 400 Bad Request   1.8731501372207708
+kittens service: 2021/05/08 19:49:47 [::1]:61606 GET /kittens/search/id 200 OK {"id": 20} {"id":20,"name":"Fat Freddys Cat","weight":20}
+ 1.994230773529108
+kittens service: 2021/05/08 19:49:47 [::1]:61609 GET /kittens/search/id 404 Not Found {"id": 2}  2.0378739494304563
+kittens service: 2021/05/08 19:49:47 [::1]:61616 GET /kittens/search/id 400 Bad Request   1.9636755374308157
+kittens service: 2021/05/08 19:49:47 [::1]:61612 GET /kittens/search/id 404 Not Found {"id": 2}  2.029690018886892
+kittens service: 2021/05/08 19:49:47 [::1]:61614 GET /kittens/search/id 200 OK {"id": 20} {"id":20,"name":"Fat Freddys Cat","weight":20}
+ 2.0991014365639753
+kittens service: 2021/05/08 19:49:47 [::1]:61620 DELETE /kittens/delete/name 400 Bad Request   1.898742275732899
+kittens service: 2021/05/08 19:49:47 [::1]:61617 DELETE /kittens/delete/name 400 Bad Request   1.776242774072712
+kittens service: 2021/05/08 19:49:47 [::1]:61619 GET /kittens/search/name 400 Bad Request {"d": 1}  1.661646466068021
+kittens service: 2021/05/08 19:49:47 [::1]:61621 GET /kittens/search/name 400 Bad Request {"d": 1}  1.554443468257181
+kittens service: 2021/05/08 19:49:47 [::1]:61615 GET /kittens/search/id 404 Not Found {"id": 2}  1.6800535670792984
+kittens service: 2021/05/08 19:49:47 [::1]:61613 GET /kittens/search/id 404 Not Found {"id": 2}  1.8942759175903117
+kittens service: 2021/05/08 19:49:47 [::1]:61618 GET /kittens/search/id 404 Not Found {"id": 2}  1.9166774712941628
+kittens service: 2021/05/08 19:49:47 [::1]:61624 DELETE /kittens/delete/name 400 Bad Request   1.81680795701712
+kittens service: 2021/05/08 19:49:47 [::1]:61623 GET /kittens/search/name 400 Bad Request {"d": 1}  1.6995945404353703
+kittens service: 2021/05/08 19:49:47 [::1]:61625 DELETE /kittens/delete/name 400 Bad Request   1.5899432797621207
+kittens service: 2021/05/08 19:49:47 [::1]:61622 GET /kittens/search/id 404 Not Found {"id": 2}  1.6423404875194034
+kittens service: 2021/05/08 19:49:47 [::1]:61627 DELETE /kittens/delete/name 400 Bad Request {"nme":"Garfield"}  1.5363830367117
+kittens service: 2021/05/08 19:49:47 [::1]:61630 DELETE /kittens/delete/name 400 Bad Request   1.4372615504722355
+kittens service: 2021/05/08 19:49:47 [::1]:61631 DELETE /kittens/delete/name 400 Bad Request   1.3445349988288655
+kittens service: 2021/05/08 19:49:47 [::1]:61626 DELETE /kittens/delete/name 400 Bad Request   1.2577908053560356
+kittens service: 2021/05/08 19:49:47 [::1]:61633 DELETE /kittens/delete/name 400 Bad Request   1.176643011462098
+kittens service: 2021/05/08 19:49:47 [::1]:61635 DELETE /kittens/delete/name 400 Bad Request   1.1007305591097045
+kittens service: 2021/05/08 19:49:47 [::1]:61634 DELETE /kittens/delete/name 400 Bad Request   1.0297156843284334
+kittens service: 2021/05/08 19:49:47 [::1]:61628 GET /kittens/search/id 200 OK {"id": 20} {"id":20,"name":"Fat Freddys Cat","weight":20}
+ 1.3226501563072441
+kittens service: 2021/05/08 19:49:47 [::1]:61632 GET /kittens/search/id 200 OK {"id": 20} {"id":20,"name":"Fat Freddys Cat","weight":20}
+ 1.4534275655777447
+kittens service: 2021/05/08 19:49:47 [::1]:61629 GET /kittens/search/id 200 OK {"id": 20} {"id":20,"name":"Fat Freddys Cat","weight":20}
+ 1.8113612710243419
+kittens service: 2021/05/08 19:49:47 [::1]:61638 DELETE /kittens/delete/name 400 Bad Request   1.7272669954743844
+kittens service: 2021/05/08 19:49:47 [::1]:61636 DELETE /kittens/delete/name 400 Bad Request   1.6158304151211984
+kittens service: 2021/05/08 19:49:47 [::1]:61639 DELETE /kittens/delete/name 400 Bad Request {"nme":"Garfield"}  1.5115832915649923
+kittens service: 2021/05/08 19:49:47 [::1]:61640 DELETE /kittens/delete/name 400 Bad Request {"nme":"Garfield"}  1.41406178888338
+kittens service: 2021/05/08 19:49:47 [::1]:61642 DELETE /kittens/delete/name 400 Bad Request {"nme":"Garfield"}  1.3228319960521941
+kittens service: 2021/05/08 19:49:47 [::1]:61643 DELETE /kittens/delete/name 400 Bad Request   1.2374879963068912
+kittens service: 2021/05/08 19:49:47 [::1]:61637 DELETE /kittens/delete/name 404 Not Found {"name":"Guarimba"}  1.4158565126741887
+kittens service: 2021/05/08 19:49:47 [::1]:61645 DELETE /kittens/delete/name 400 Bad Request {"nme":"Garfield"}  1.356310931211338
+kittens service: 2021/05/08 19:49:47 [::1]:61641 GET /kittens/search/id 404 Not Found {"id": 2}  1.415400548552542
+kittens service: 2021/05/08 19:49:47 [::1]:61646 GET /kittens/search/id 404 Not Found {"id": 2}  1.441135997033023
+kittens service: 2021/05/08 19:49:47 [::1]:61644 GET /kittens/search/id 404 Not Found {"id": 2}  1.61428206174057
+kittens service: 2021/05/08 19:49:47 [::1]:61647 DELETE /kittens/delete/name 404 Not Found {"name":"Guarimba"}  1.681567090015372
+kittens service: 2021/05/08 19:49:47 [::1]:61649 DELETE /kittens/delete/name 400 Bad Request {"nme":"Garfield"}  1.574033729369219
+kittens service: 2021/05/08 19:49:47 [::1]:61648 DELETE /kittens/delete/name 400 Bad Request {"nme":"Garfield"}  1.472483166184108
+kittens service: 2021/05/08 19:49:47 [::1]:61650 DELETE /kittens/delete/name 404 Not Found {"name":"Guarimba"}  1.5599165103012624
+kittens service: 2021/05/08 19:49:47 [::1]:61654 DELETE /kittens/delete/name 400 Bad Request   1.4592767354431164
+kittens service: 2021/05/08 19:49:47 [::1]:61651 DELETE /kittens/delete/name 404 Not Found {"name":"Guarimba"}  1.555555655737109
+kittens service: 2021/05/08 19:49:47 [::1]:61652 DELETE /kittens/delete/name 404 Not Found {"name":"Guarimba"}  1.6133198069798762
+kittens service: 2021/05/08 19:49:47 [::1]:61658 DELETE /kittens/delete/name 400 Bad Request   1.509234658142465
+kittens service: 2021/05/08 19:49:47 [::1]:61659 DELETE /kittens/delete/name 400 Bad Request   1.4118646801977899
+kittens service: 2021/05/08 19:49:47 [::1]:61663 DELETE /kittens/delete/name 400 Bad Request   1.3207766363140614
+kittens service: 2021/05/08 19:49:47 [::1]:61656 DELETE /kittens/delete/name 404 Not Found {"name":"Guarimba"}  1.5015200791325092
+kittens service: 2021/05/08 19:49:47 [::1]:61657 DELETE /kittens/delete/name 404 Not Found {"name":"Guarimba"}  1.7299639449949278
+kittens service: 2021/05/08 19:49:47 [::1]:61664 DELETE /kittens/delete/name 400 Bad Request   1.618353367898481
+kittens service: 2021/05/08 19:49:47 [::1]:61665 DELETE /kittens/delete/name 400 Bad Request   1.5139434731953534
+kittens service: 2021/05/08 19:49:47 [::1]:61666 DELETE /kittens/delete/name 400 Bad Request {"nme":"Garfield"}  1.4162697007311371
+kittens service: 2021/05/08 19:49:47 [::1]:61668 DELETE /kittens/delete/name 400 Bad Request {"nme":"Garfield"}  1.3575748813291282
+kittens service: 2021/05/08 19:49:47 [::1]:61669 DELETE /kittens/delete/name 400 Bad Request {"nme":"Garfield"}  1.2729055341466042
+kittens service: 2021/05/08 19:49:48 [::1]:61671 DELETE /kittens/delete/name 404 Not Found {"name":"Guarimba"}  1.31596969323392
+kittens service: 2021/05/08 19:49:48 [::1]:61673 DELETE /kittens/delete/name 404 Not Found {"name":"Guarimba"}  1.389455519476893
+kittens service: 2021/05/08 19:49:48 [::1]:61672 DELETE /kittens/delete/name 404 Not Found {"name":"Guarimba"}  1.4528132278977386
+kittens service: 2021/05/08 19:49:48 [::1]:61674 DELETE /kittens/delete/name 404 Not Found {"name":"Garfield"}  1.496773664807562
+kittens service: 2021/05/08 19:49:48 [::1]:61653 DELETE /kittens/delete/name 200 OK {"name":"Garfield"}  3.4274656864328805
+kittens service: 2021/05/08 19:49:48 [::1]:61676 DELETE /kittens/delete/name 404 Not Found {"name":"Garfield"}  3.305777577630759
+kittens service: 2021/05/08 19:49:48 [::1]:61675 DELETE /kittens/delete/name 404 Not Found {"name":"Garfield"}  4.119814300507251
+kittens service: 2021/05/08 19:49:48 [::1]:61667 DELETE /kittens/delete/name 200 OK {"name":"Garfield"}  4.2249532177836135
+kittens service: 2021/05/08 19:49:48 [::1]:61661 DELETE /kittens/delete/name 200 OK {"name":"Garfield"}  5.454058539184204
+kittens service: 2021/05/08 19:49:48 [::1]:61655 DELETE /kittens/delete/name 200 OK {"name":"Garfield"}  7.060538633430384
+kittens service: 2021/05/08 19:49:48 [::1]:61670 DELETE /kittens/delete/name 200 OK {"name":"Garfield"}  7.668787753854231
+kittens service: 2021/05/08 19:49:48 [::1]:61660 DELETE /kittens/delete/name 200 OK {"name":"Garfield"}  9.947429033289708
+kittens service: 2021/05/08 19:49:48 [::1]:61662 DELETE /kittens/delete/name 200 OK {"name":"Garfield"}  8.738072414895894
+kittens service: 2021/05/08 19:49:48 [::1]:61681 GET /kittens/search/name 404 Not Found {"name":"Garfield"}  9.444872321464565
+kittens service: 2021/05/08 19:49:48 [::1]:61682 GET /kittens/search/name 404 Not Found {"name":"Garfield"}  8.564663706921646
+kittens service: 2021/05/08 19:49:48 [::1]:61679 GET /kittens/search/name 404 Not Found {"name":"Garfield"}  9.007461203950724
+kittens service: 2021/05/08 19:49:48 [::1]:61683 GET /kittens/search/name 404 Not Found {"name":"Garfield"}  8.163266048410573
+kittens service: 2021/05/08 19:49:48 [::1]:61680 GET /kittens/search/name 404 Not Found {"name":"Garfield"}  7.820403722706665
+kittens service: 2021/05/08 19:49:48 [::1]:61677 GET /kittens/search/name 404 Not Found {"name":"Garfield"}  7.533267998661074
+kittens service: 2021/05/08 19:49:48 [::1]:61685 GET /kittens/search/name 404 Not Found {"name":"Garfield"}  7.129863611650682
+kittens service: 2021/05/08 19:49:48 [::1]:61678 GET /kittens/search/name 404 Not Found {"name":"Garfield"}  6.984878862511928
+kittens service: 2021/05/08 19:49:48 [::1]:61684 GET /kittens/search/name 404 Not Found {"name":"Garfield"}  6.661841516543417
+kittens service: 2021/05/08 19:49:48 [::1]:61686 GET /kittens/search/name 404 Not Found {"name":"Garfield"}  6.431374321927713
+kittens service: 2021/05/08 19:49:48 [::1]:61691 GET /kittens/search/id 404 Not Found {"id": 2}  6.130253397932377
+kittens service: 2021/05/08 19:49:48 [::1]:61689 GET /kittens/search/id 404 Not Found {"id": 2}  5.923856404517386
+kittens service: 2021/05/08 19:49:48 [::1]:61687 GET /kittens/search/id 404 Not Found {"id": 2}  5.7693043784194895
+kittens service: 2021/05/08 19:49:48 [::1]:61690 GET /kittens/search/id 404 Not Found {"id": 2}  5.551149257231136
+kittens service: 2021/05/08 19:49:48 [::1]:61688 GET /kittens/search/id 404 Not Found {"id": 2}  5.486681563216225
+kittens service: 2021/05/08 19:49:48 [::1]:61693 GET /kittens/search/id 404 Not Found {"id": 2}  5.320824688170017
+kittens service: 2021/05/08 19:49:48 [::1]:61692 GET /kittens/search/id 404 Not Found {"id": 2}  5.242526321191306
+kittens service: 2021/05/08 19:49:48 [::1]:61696 GET /kittens/search/id 404 Not Found {"id": 2}  5.062860106920899
+kittens service: 2021/05/08 19:49:48 [::1]:61695 GET /kittens/search/id 404 Not Found {"id": 2}  4.936488487119552
+kittens service: 2021/05/08 19:49:48 [::1]:61694 GET /kittens/search/id 404 Not Found {"id": 2}  4.904121487950548
+kittens service: 2021/05/08 19:49:48 [::1]:61699 DELETE /kittens/delete/id 400 Bad Request   4.587726553244062
+kittens service: 2021/05/08 19:49:48 [::1]:61700 DELETE /kittens/delete/id 400 Bad Request   4.291744194970252
+kittens service: 2021/05/08 19:49:48 [::1]:61698 DELETE /kittens/delete/id 400 Bad Request   4.014857472714107
+kittens service: 2021/05/08 19:49:48 [::1]:61701 DELETE /kittens/delete/id 400 Bad Request   3.8219763454422293
+kittens service: 2021/05/08 19:49:48 [::1]:61702 DELETE /kittens/delete/id 400 Bad Request   3.6086101296072473
+kittens service: 2021/05/08 19:49:48 [::1]:61697 DELETE /kittens/delete/id 400 Bad Request   3.3757965728583925
+kittens service: 2021/05/08 19:49:48 [::1]:61703 DELETE /kittens/delete/id 400 Bad Request   3.1580032455772065
+kittens service: 2021/05/08 19:49:48 [::1]:61704 DELETE /kittens/delete/id 400 Bad Request   2.988112713604483
+kittens service: 2021/05/08 19:49:48 [::1]:61705 DELETE /kittens/delete/id 400 Bad Request   2.795331248210646
+kittens service: 2021/05/08 19:49:48 [::1]:61706 DELETE /kittens/delete/id 400 Bad Request   2.614987296713185
+kittens service: 2021/05/08 19:49:48 [::1]:61707 DELETE /kittens/delete/id 400 Bad Request   2.4535365033768506
+kittens service: 2021/05/08 19:49:48 [::1]:61708 DELETE /kittens/delete/id 400 Bad Request   2.3025018902557632
+kittens service: 2021/05/08 19:49:48 [::1]:61711 DELETE /kittens/delete/id 400 Bad Request   2.153953381207004
+kittens service: 2021/05/08 19:49:48 [::1]:61715 DELETE /kittens/delete/id 400 Bad Request   2.053253163064617
+kittens service: 2021/05/08 19:49:48 [::1]:61713 DELETE /kittens/delete/id 400 Bad Request   1.9263077977056093
+kittens service: 2021/05/08 19:49:48 [::1]:61710 DELETE /kittens/delete/id 400 Bad Request   1.8020298752729895
+kittens service: 2021/05/08 19:49:48 [::1]:61712 DELETE /kittens/delete/id 400 Bad Request   1.6866473026747324
+kittens service: 2021/05/08 19:49:48 [::1]:61714 DELETE /kittens/delete/id 400 Bad Request   1.6119410250828143
+kittens service: 2021/05/08 19:49:48 [::1]:61709 DELETE /kittens/delete/id 400 Bad Request   1.5079448299161813
+kittens service: 2021/05/08 19:49:48 [::1]:61716 DELETE /kittens/delete/id 400 Bad Request   1.4434645183086858
+kittens service: 2021/05/08 19:49:48 [::1]:61718 DELETE /kittens/delete/id 400 Bad Request {"d": 1}  1.3831442268048997
+kittens service: 2021/05/08 19:49:48 [::1]:61717 DELETE /kittens/delete/id 400 Bad Request {"d": 1}  1.293909115398132
+kittens service: 2021/05/08 19:49:48 [::1]:61719 DELETE /kittens/delete/id 400 Bad Request {"d": 1}  1.2130569144047043
+kittens service: 2021/05/08 19:49:48 [::1]:61720 DELETE /kittens/delete/id 400 Bad Request {"d": 1}  1.1347951779914975
+kittens service: 2021/05/08 19:49:48 [::1]:61721 DELETE /kittens/delete/id 400 Bad Request {"d": 1}  1.061582585863014
+kittens service: 2021/05/08 19:49:48 [::1]:61723 DELETE /kittens/delete/id 400 Bad Request {"d": 1}  0.9930933867750776
+kittens service: 2021/05/08 19:49:48 [::1]:61725 DELETE /kittens/delete/id 400 Bad Request {"d": 1}  0.9290228456928147
+kittens service: 2021/05/08 19:49:48 [::1]:61722 DELETE /kittens/delete/id 400 Bad Request {"d": 1}  0.9018471782287621
+kittens service: 2021/05/08 19:49:48 [::1]:61726 DELETE /kittens/delete/id 400 Bad Request {"d": 1}  0.8513667151172292
+kittens service: 2021/05/08 19:49:48 [::1]:61727 DELETE /kittens/delete/id 400 Bad Request {"d": 1}  0.7964398302709564
+kittens service: 2021/05/08 19:49:48 [::1]:61728 DELETE /kittens/delete/id 404 Not Found {"id": 20}  0.8566824218663786
+kittens service: 2021/05/08 19:49:48 [::1]:61733 DELETE /kittens/delete/id 404 Not Found {"id": 20}  0.917186781745967
+kittens service: 2021/05/08 19:49:48 [::1]:61730 DELETE /kittens/delete/id 404 Not Found {"id": 20}  1.0527102151817112
+kittens service: 2021/05/08 19:49:48 [::1]:61724 DELETE /kittens/delete/id 200 OK {"id": 20}  1.4164127819441814
+kittens service: 2021/05/08 19:49:48 [::1]:61731 DELETE /kittens/delete/id 404 Not Found {"id": 20}  1.5081664408065103
+kittens service: 2021/05/08 19:49:48 [::1]:61732 DELETE /kittens/delete/id 404 Not Found {"id": 20}  1.5081664408065103
+kittens service: 2021/05/08 19:49:48 [::1]:61729 DELETE /kittens/delete/id 404 Not Found {"id": 20}  1.5711815091415742
+kittens service: 2021/05/08 19:49:48 [::1]:61734 DELETE /kittens/delete/id 404 Not Found {"id": 20}  1.6170923795195373
+kittens service: 2021/05/08 19:49:48 [::1]:61735 DELETE /kittens/delete/id 404 Not Found {"id": 20}  1.6630348066473093
+kittens service: 2021/05/08 19:49:48 [::1]:61736 DELETE /kittens/delete/id 404 Not Found {"id": 20}  1.7463228836378055
+kittens service: 2021/05/08 19:49:48 [::1]:61745 DELETE /kittens/delete/id 404 Not Found {"id": 1}  1.7123343104998827
+kittens service: 2021/05/08 19:49:48 [::1]:61741 DELETE /kittens/delete/id 404 Not Found {"id": 1}  2.3248221071478987
+kittens service: 2021/05/08 19:49:48 [::1]:61742 DELETE /kittens/delete/id 404 Not Found {"id": 1}  2.374233584106099
+kittens service: 2021/05/08 19:49:48 [::1]:61737 DELETE /kittens/delete/id 404 Not Found {"id": 1}  1.8338804840160194
+kittens service: 2021/05/08 19:49:48 [::1]:61743 DELETE /kittens/delete/id 404 Not Found {"id": 1}  2.4530765786798994
+kittens service: 2021/05/08 19:49:48 [::1]:61740 DELETE /kittens/delete/id 404 Not Found {"id": 1}  1.9820365818214376
+kittens service: 2021/05/08 19:49:48 [::1]:61738 DELETE /kittens/delete/id 404 Not Found {"id": 1}  2.1605503507361834
+kittens service: 2021/05/08 19:49:48 [::1]:61739 DELETE /kittens/delete/id 404 Not Found {"id": 1}  2.58687221921935
+kittens service: 2021/05/08 19:49:48 [::1]:61744 DELETE /kittens/delete/id 404 Not Found {"id": 1}  2.1576374248822363
+kittens service: 2021/05/08 19:49:48 [::1]:61746 DELETE /kittens/delete/id 404 Not Found {"id": 1}  2.4312909929586155
+kittens service: 2021/05/08 19:49:48 [::1]:61747 GET /kittens/search/name 200 OK {"name":"Felix"} [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3},{"id":12,"name":"Felix","weight":12.3}]
+ 2.664170785721327
+kittens service: 2021/05/08 19:49:48 [::1]:61752 GET /kittens/search/name 200 OK {"name":"Felix"} [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3},{"id":12,"name":"Felix","weight":12.3}]
+ 2.905842071583389
+kittens service: 2021/05/08 19:49:48 [::1]:61755 GET /kittens/search/name 200 OK {"name":"Felix"} [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3},{"id":12,"name":"Felix","weight":12.3}]
+ 3.1500361937581998
+kittens service: 2021/05/08 19:49:48 [::1]:61748 GET /kittens/search/name 200 OK {"name":"Felix"} [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3},{"id":12,"name":"Felix","weight":12.3}]
+ 2.8200242834167257
+kittens service: 2021/05/08 19:49:48 [::1]:61749 GET /kittens/search/name 200 OK {"name":"Felix"} [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3},{"id":12,"name":"Felix","weight":12.3}]
+ 3.1500361937581998
+kittens service: 2021/05/08 19:49:48 [::1]:61756 GET /kittens/search/name 200 OK {"name":"Felix"} [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3},{"id":12,"name":"Felix","weight":12.3}]
+ 3.2381048264189616
+kittens service: 2021/05/08 19:49:48 [::1]:61751 GET /kittens/search/name 200 OK {"name":"Felix"} [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3},{"id":12,"name":"Felix","weight":12.3}]
+ 3.4839943382084773
+kittens service: 2021/05/08 19:49:48 [::1]:61750 GET /kittens/search/name 200 OK {"name":"Felix"} [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3},{"id":12,"name":"Felix","weight":12.3}]
+ 3.7212830784946203
+kittens service: 2021/05/08 19:49:48 [::1]:61754 GET /kittens/search/name 200 OK {"name":"Felix"} [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3},{"id":12,"name":"Felix","weight":12.3}]
+ 3.7212830784946203
+kittens service: 2021/05/08 19:49:48 [::1]:61753 GET /kittens/search/name 200 OK {"name":"Felix"} [{"id":4,"name":"Felix","weight":12.3},{"id":5,"name":"Felix","weight":12.3},{"id":7,"name":"Felix","weight":12.3},{"id":8,"name":"Felix","weight":12.3},{"id":9,"name":"Felix","weight":12.3},{"id":10,"name":"Felix","weight":12.3},{"id":14,"name":"Felix","weight":12.3},{"id":13,"name":"Felix","weight":12.3},{"id":11,"name":"Felix","weight":12.3},{"id":12,"name":"Felix","weight":12.3}]
+ 3.3128077408435446
+kittens service: 2021/05/08 19:49:48 [::1]:61758 GET /kittens/search/id 404 Not Found {"id": 1}  3.69197449278529
+kittens service: 2021/05/08 19:49:48 [::1]:61764 GET /kittens/search/id 404 Not Found {"id": 1}  3.4047039643188115
+kittens service: 2021/05/08 19:49:48 [::1]:61763 GET /kittens/search/id 404 Not Found {"id": 1}  3.359032740814372
+kittens service: 2021/05/08 19:49:48 [::1]:61760 GET /kittens/search/id 404 Not Found {"id": 1}  3.359032740814372
+kittens service: 2021/05/08 19:49:48 [::1]:61757 GET /kittens/search/id 404 Not Found {"id": 1}  3.6370386560170958
+kittens service: 2021/05/08 19:49:48 [::1]:61759 GET /kittens/search/id 404 Not Found {"id": 1}  3.542449065306316
+kittens service: 2021/05/08 19:49:48 [::1]:61761 GET /kittens/search/id 404 Not Found {"id": 1}  3.587130977121723
+kittens service: 2021/05/08 19:49:48 [::1]:61762 GET /kittens/search/id 404 Not Found {"id": 1}  3.2756693381811868
+kittens service: 2021/05/08 19:49:48 [::1]:61765 GET /kittens/search/id 404 Not Found {"id": 1}  3.0687895040690725
+kittens service: 2021/05/08 19:49:48 [::1]:61766 GET /kittens/search/id 404 Not Found {"id": 1}  3.1867680905565945
+kittens service: 2021/05/08 19:49:48 [::1]:61767 GET /kittens/search/name 200 OK {"name":"Fat Freddys Cat"} [{"id":26,"name":"Fat Freddys Cat","weight":20},{"id":25,"name":"Fat Freddys Cat","weight":20},{"id":27,"name":"Fat Freddys Cat","weight":20},{"id":28,"name":"Fat Freddys Cat","weight":20},{"id":29,"name":"Fat Freddys Cat","weight":20},{"id":32,"name":"Fat Freddys Cat","weight":20},{"id":33,"name":"Fat Freddys Cat","weight":20},{"id":31,"name":"Fat Freddys Cat","weight":20},{"id":30,"name":"Fat Freddys Cat","weight":20}]
+ 3.273422240293538
+kittens service: 2021/05/08 19:49:48 [::1]:61769 GET /kittens/search/name 200 OK {"name":"Fat Freddys Cat"} [{"id":26,"name":"Fat Freddys Cat","weight":20},{"id":25,"name":"Fat Freddys Cat","weight":20},{"id":27,"name":"Fat Freddys Cat","weight":20},{"id":28,"name":"Fat Freddys Cat","weight":20},{"id":29,"name":"Fat Freddys Cat","weight":20},{"id":32,"name":"Fat Freddys Cat","weight":20},{"id":33,"name":"Fat Freddys Cat","weight":20},{"id":31,"name":"Fat Freddys Cat","weight":20},{"id":30,"name":"Fat Freddys Cat","weight":20}]
+ 3.156803084451713
+kittens service: 2021/05/08 19:49:48 [::1]:61768 GET /kittens/search/name 200 OK {"name":"Fat Freddys Cat"} [{"id":26,"name":"Fat Freddys Cat","weight":20},{"id":25,"name":"Fat Freddys Cat","weight":20},{"id":27,"name":"Fat Freddys Cat","weight":20},{"id":28,"name":"Fat Freddys Cat","weight":20},{"id":29,"name":"Fat Freddys Cat","weight":20},{"id":32,"name":"Fat Freddys Cat","weight":20},{"id":33,"name":"Fat Freddys Cat","weight":20},{"id":31,"name":"Fat Freddys Cat","weight":20},{"id":30,"name":"Fat Freddys Cat","weight":20}]
+ 3.420220805435891
+kittens service: 2021/05/08 19:49:48 [::1]:61770 GET /kittens/search/name 200 OK {"name":"Fat Freddys Cat"} [{"id":26,"name":"Fat Freddys Cat","weight":20},{"id":25,"name":"Fat Freddys Cat","weight":20},{"id":27,"name":"Fat Freddys Cat","weight":20},{"id":28,"name":"Fat Freddys Cat","weight":20},{"id":29,"name":"Fat Freddys Cat","weight":20},{"id":32,"name":"Fat Freddys Cat","weight":20},{"id":33,"name":"Fat Freddys Cat","weight":20},{"id":31,"name":"Fat Freddys Cat","weight":20},{"id":30,"name":"Fat Freddys Cat","weight":20}]
+ 3.482116237343253
+kittens service: 2021/05/08 19:49:48 [::1]:61774 GET /kittens/search/name 200 OK {"name":"Fat Freddys Cat"} [{"id":26,"name":"Fat Freddys Cat","weight":20},{"id":25,"name":"Fat Freddys Cat","weight":20},{"id":27,"name":"Fat Freddys Cat","weight":20},{"id":28,"name":"Fat Freddys Cat","weight":20},{"id":29,"name":"Fat Freddys Cat","weight":20},{"id":32,"name":"Fat Freddys Cat","weight":20},{"id":33,"name":"Fat Freddys Cat","weight":20},{"id":31,"name":"Fat Freddys Cat","weight":20},{"id":30,"name":"Fat Freddys Cat","weight":20}]
+ 3.5680958349340113
+kittens service: 2021/05/08 19:49:48 [::1]:61775 GET /kittens/search/name 200 OK {"name":"Fat Freddys Cat"} [{"id":26,"name":"Fat Freddys Cat","weight":20},{"id":25,"name":"Fat Freddys Cat","weight":20},{"id":27,"name":"Fat Freddys Cat","weight":20},{"id":28,"name":"Fat Freddys Cat","weight":20},{"id":29,"name":"Fat Freddys Cat","weight":20},{"id":32,"name":"Fat Freddys Cat","weight":20},{"id":33,"name":"Fat Freddys Cat","weight":20},{"id":31,"name":"Fat Freddys Cat","weight":20},{"id":30,"name":"Fat Freddys Cat","weight":20}]
+ 3.678158789989078
+kittens service: 2021/05/08 19:49:48 [::1]:61772 GET /kittens/search/name 200 OK {"name":"Fat Freddys Cat"} [{"id":26,"name":"Fat Freddys Cat","weight":20},{"id":25,"name":"Fat Freddys Cat","weight":20},{"id":27,"name":"Fat Freddys Cat","weight":20},{"id":28,"name":"Fat Freddys Cat","weight":20},{"id":29,"name":"Fat Freddys Cat","weight":20},{"id":32,"name":"Fat Freddys Cat","weight":20},{"id":33,"name":"Fat Freddys Cat","weight":20},{"id":31,"name":"Fat Freddys Cat","weight":20},{"id":30,"name":"Fat Freddys Cat","weight":20}]
+ 3.6485283617124624
+kittens service: 2021/05/08 19:49:48 [::1]:61771 GET /kittens/search/name 200 OK {"name":"Fat Freddys Cat"} [{"id":26,"name":"Fat Freddys Cat","weight":20},{"id":25,"name":"Fat Freddys Cat","weight":20},{"id":27,"name":"Fat Freddys Cat","weight":20},{"id":28,"name":"Fat Freddys Cat","weight":20},{"id":29,"name":"Fat Freddys Cat","weight":20},{"id":32,"name":"Fat Freddys Cat","weight":20},{"id":33,"name":"Fat Freddys Cat","weight":20},{"id":31,"name":"Fat Freddys Cat","weight":20},{"id":30,"name":"Fat Freddys Cat","weight":20}]
+ 3.6628388680542985
+kittens service: 2021/05/08 19:49:48 [::1]:61773 GET /kittens/search/name 200 OK {"name":"Fat Freddys Cat"} [{"id":26,"name":"Fat Freddys Cat","weight":20},{"id":25,"name":"Fat Freddys Cat","weight":20},{"id":27,"name":"Fat Freddys Cat","weight":20},{"id":28,"name":"Fat Freddys Cat","weight":20},{"id":29,"name":"Fat Freddys Cat","weight":20},{"id":32,"name":"Fat Freddys Cat","weight":20},{"id":33,"name":"Fat Freddys Cat","weight":20},{"id":31,"name":"Fat Freddys Cat","weight":20},{"id":30,"name":"Fat Freddys Cat","weight":20}]
+ 3.7554428120507954
+kittens service: 2021/05/08 19:49:48 [::1]:61776 GET /kittens/search/name 200 OK {"name":"Fat Freddys Cat"} [{"id":26,"name":"Fat Freddys Cat","weight":20},{"id":25,"name":"Fat Freddys Cat","weight":20},{"id":27,"name":"Fat Freddys Cat","weight":20},{"id":28,"name":"Fat Freddys Cat","weight":20},{"id":29,"name":"Fat Freddys Cat","weight":20},{"id":32,"name":"Fat Freddys Cat","weight":20},{"id":33,"name":"Fat Freddys Cat","weight":20},{"id":31,"name":"Fat Freddys Cat","weight":20},{"id":30,"name":"Fat Freddys Cat","weight":20}]
+ 3.7644916628862286
+kittens service: 2021/05/08 19:49:48 [::1]:61781 GET /kittens/search/id 404 Not Found {"id": 3}  3.8198298527443475
+kittens service: 2021/05/08 19:49:48 [::1]:61777 GET /kittens/search/id 404 Not Found {"id": 3}  3.8198298527443475
+kittens service: 2021/05/08 19:49:48 [::1]:61778 GET /kittens/search/id 404 Not Found {"id": 3}  3.8198298527443475
+kittens service: 2021/05/08 19:49:48 [::1]:61779 GET /kittens/search/id 404 Not Found {"id": 3}  3.82430534611568
+kittens service: 2021/05/08 19:49:48 [::1]:61784 GET /kittens/search/id 404 Not Found {"id": 3}  3.836975968946927
+kittens service: 2021/05/08 19:49:48 [::1]:61785 GET /kittens/search/id 404 Not Found {"id": 3}  3.7521065515955123
+kittens service: 2021/05/08 19:49:48 [::1]:61780 GET /kittens/search/id 404 Not Found {"id": 3}  3.7310674192345115
+kittens service: 2021/05/08 19:49:48 [::1]:61783 GET /kittens/search/id 404 Not Found {"id": 3}  3.684157231608974
+kittens service: 2021/05/08 19:49:48 [::1]:61786 GET /kittens/search/id 404 Not Found {"id": 3}  3.592566442472912
+kittens service: 2021/05/08 19:49:48 [::1]:61782 GET /kittens/search/id 404 Not Found {"id": 3}  3.627340488961317
+kittens service: 2021/05/08 19:49:48 [::1]:61788 DELETE /kittens/delete/all 200 OK   3.7027686074746597
+kittens service: 2021/05/08 19:49:48 [::1]:61789 DELETE /kittens/delete/all 200 OK   3.8943577295730694
+kittens service: 2021/05/08 19:49:48 [::1]:61787 DELETE /kittens/delete/all 200 OK   4.057070134116742
+kittens service: 2021/05/08 19:49:48 [::1]:61793 DELETE /kittens/delete/all 200 OK   4.130652706109211
+kittens service: 2021/05/08 19:49:48 [::1]:61790 DELETE /kittens/delete/all 200 OK   4.18135253152152
+kittens service: 2021/05/08 19:49:48 [::1]:61792 DELETE /kittens/delete/all 200 OK   4.347471723036261
+kittens service: 2021/05/08 19:49:48 [::1]:61791 DELETE /kittens/delete/all 200 OK   4.536899353808115
+kittens service: 2021/05/08 19:49:48 [::1]:61795 DELETE /kittens/delete/all 200 OK   4.480292943885011
+kittens service: 2021/05/08 19:49:48 [::1]:61794 DELETE /kittens/delete/all 200 OK   4.467368330704782
+kittens service: 2021/05/08 19:49:48 [::1]:61796 DELETE /kittens/delete/all 200 OK   4.427338560408559
+kittens service: 2021/05/08 19:49:48 [::1]:61800 GET /kittens/list 404 Not Found   4.292267148078668
+kittens service: 2021/05/08 19:49:48 [::1]:61798 GET /kittens/list 404 Not Found   4.113424106267141
+kittens service: 2021/05/08 19:49:48 [::1]:61802 GET /kittens/list 404 Not Found   3.977345131669261
+kittens service: 2021/05/08 19:49:48 [::1]:61797 GET /kittens/list 404 Not Found   3.7342574981621737
+kittens service: 2021/05/08 19:49:48 [::1]:61801 GET /kittens/list 404 Not Found   3.7852131876905992
+kittens service: 2021/05/08 19:49:48 [::1]:61799 GET /kittens/list 404 Not Found   3.6865892724742917
+kittens service: 2021/05/08 19:49:48 [::1]:61803 GET /kittens/list 404 Not Found   3.5775383516694985
+kittens service: 2021/05/08 19:49:48 [::1]:61804 GET /kittens/list 404 Not Found   3.547155232206951
+kittens service: 2021/05/08 19:49:48 [::1]:61805 GET /kittens/list 404 Not Found   3.4544097333548893
+kittens service: 2021/05/08 19:49:48 [::1]:61806 GET /kittens/list 404 Not Found   3.338802653783606
