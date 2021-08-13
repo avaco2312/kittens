@@ -7,7 +7,7 @@ type Store interface {
 	DeleteAll()
 	Insert(kitten Kitten) int
 	DeleteName(name string) bool
-	SearchId(id int) *Kitten
+	SearchId(id int) Kitten
 	DeleteId(id int) bool
 }
 

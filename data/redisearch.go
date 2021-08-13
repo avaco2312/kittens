@@ -44,17 +44,17 @@ func (r *RediSearchStore) SearchName(name string) Kittens {
 }
 
 // Search returns Kitten from the RediSearchDB instance which have the id id
-func (r *RediSearchStore) SearchId(id int) *Kitten {
+func (r *RediSearchStore) SearchId(id int) Kitten {
 	kitten := Kitten{}
 	s, _ := r.session.Get(strconv.Itoa(id))
 	if s == nil {
-		return nil
+		return kitten
 	}
 	kitten.Id, _ = strconv.Atoi(s.Properties["id"].(string))
 	kitten.Name = s.Properties["name"].(string)
 	f, _ := strconv.ParseFloat(s.Properties["weight"].(string), 32)
 	kitten.Weight = float32(f)
-	return &kitten
+	return kitten
 }
 
 // DeleteAll deletes all the kittens from the datastore

@@ -53,13 +53,10 @@ func (c *CassandraStore) SearchName(name string) Kittens {
 }
 
 // Search returns Kitten from the CassandraDB instance which have the id id
-func (c *CassandraStore) SearchId(id int) *Kitten {
+func (c *CassandraStore) SearchId(id int) Kitten {
 	kitten := Kitten{}
-	err := c.session.Query("SELECT id, name, weight FROM kittenserver.kittens WHERE id = ?;").Bind(id).Scan(&kitten.Id, &kitten.Name, &kitten.Weight)
-	if err != nil {
-		return nil
-	}
-	return &kitten
+	_ = c.session.Query("SELECT id, name, weight FROM kittenserver.kittens WHERE id = ?;").Bind(id).Scan(&kitten.Id, &kitten.Name, &kitten.Weight)
+	return kitten
 }
 
 // DeleteAll deletes all the kittens from the datastore

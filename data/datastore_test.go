@@ -39,7 +39,7 @@ func TestDataStore(t *testing.T) {
 			case "/search/id":
 				kitten := Kitten{}
 				json.NewDecoder(bytes.NewBuffer([]byte(tt.Body.(string)))).Decode(&kitten)
-				result = (store.SearchId(kitten.Id) != nil)
+				result = (store.SearchId(kitten.Id) != Kitten{})
 			case "/delete/name":
 				kitten := Kitten{}
 				json.NewDecoder(bytes.NewBuffer([]byte(tt.Body.(string)))).Decode(&kitten)
@@ -87,7 +87,7 @@ func TestDataStoreConcurrente(t *testing.T) {
 					case "/search/id":
 						kitten := Kitten{}
 						json.NewDecoder(bytes.NewBuffer([]byte(tt.Body.(string)))).Decode(&kitten)
-						result = (store.SearchId(kitten.Id) != nil)
+						result = (store.SearchId(kitten.Id) != Kitten{})
 					case "/delete/name":
 						kitten := Kitten{}
 						json.NewDecoder(bytes.NewBuffer([]byte(tt.Body.(string)))).Decode(&kitten)

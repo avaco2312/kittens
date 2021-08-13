@@ -124,7 +124,7 @@ func (d *SearchId) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
 		return
 	}
 	kitten := d.DataStore.SearchId(request.Id)
-	if kitten == nil {
+	if kitten == (data.Kitten{}) {
 		rw.WriteHeader(http.StatusNotFound)
 		return
 	}

@@ -75,14 +75,15 @@ func (m *MemoryStore) List() Kittens {
 	return result
 }
 
-func (m *MemoryStore) SearchId(id int) *Kitten {
+func (m *MemoryStore) SearchId(id int) Kitten {
+	kitten := Kitten{}
 	defer m.RUnlock()
 	m.RLock()
 	for _, k := range data {
 		if k.Id == id {
-			kitten := k
-			return &kitten
+			kitten = k
+			return kitten
 		}
 	}
-	return nil
+	return kitten
 }

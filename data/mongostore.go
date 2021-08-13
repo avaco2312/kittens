@@ -37,16 +37,13 @@ func (m *MongoStore) SearchName(name string) Kittens {
 }
 
 // Search returns Kitten from the MongoDB instance which have the id id
-func (m *MongoStore) SearchId(id int) *Kitten {
+func (m *MongoStore) SearchId(id int) Kitten {
 	s := m.session.Clone()
 	defer s.Close()
 	var result Kitten
 	c := s.DB("kittenserver").C("kittens")
-	err := c.Find(bson.M{"id": id}).One(&result)
-	if err != nil {
-		return nil
-	}
-	return &result
+	_ = c.Find(bson.M{"id": id}).One(&result)
+	return result
 }
 
 // DeleteAll deletes all the kittens from the datastore
