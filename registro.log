@@ -1,4 +1,4 @@
-kittens service: 2021/08/13 16:21:11 [::1]:52317 DELETE /kittens/delete/all 200 OK   5.2826
+kittens service: 2021/08/13 16:21:11 [::1]:52317 DELETE /kittens/delete/all 200 OK   5.282
 kittens service: 2021/08/13 16:21:11 [::1]:52318 GET /kittens/list 404 Not Found   5.087664516129032
 kittens service: 2021/08/13 16:21:11 [::1]:52319 GET /kittens/delete/all 405 Method Not Allowed   4.8207442247658685
 kittens service: 2021/08/13 16:21:11 [::1]:52320 POST /kittens/list 405 Method Not Allowed   4.509728468329362
